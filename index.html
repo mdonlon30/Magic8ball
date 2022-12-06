@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Magic 8ball</title>
+</head>
+<body>
+    <div class="title">
+        <h1>Magic 8 Ball</h1>
+    </div>
+
+    <div class="ballcontainer" id="answers">
+            <img src="./magic/magic8ball_start.png" alt="">
+    </div>
+    
+    <section id="directions">
+        <h2 id="replaced">Ask Me Anything!</h2>
+        
+    </section>
+    <section id="ask">
+        <input type="text" name="name" style="height: 20px; width: 200px;" id="myInput"/>
+      <button onclick="ask(); hideElement(); hideElement2(); getInputValue();showQuestion();">Ask</button>
+    </section>
+    <section>
+        <h4 id="question">???</h4>
+    </section>
+    <section class="reset">
+        <button><a href="./index.html">Reset</a></button>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
