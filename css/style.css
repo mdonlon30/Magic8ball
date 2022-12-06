@@ -1,6 +1,7 @@
 body {
     background: rgb(23,231,230);
     background: radial-gradient(circle, rgba(23,231,230,1) 59%, rgba(255,255,255,1) 100%);
+    height: 100vh;
 }
 
 .title {
