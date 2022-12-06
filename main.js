@@ -2,6 +2,7 @@ function ask() {
     var myImage = new Array();
     myImage[0] = "./magic/magic8ball_1.png"
     myImage[1] = "./magic/magic8ball_2.png"
+    myImage[2] = "./magic/magic8ball_20.png"
     myImage[3] = "./magic/magic8ball_3.png"
     myImage[4] = "./magic/magic8ball_4.png"
     myImage[5] = "./magic/magic8ball_5.png"
@@ -19,7 +20,6 @@ function ask() {
     myImage[17] = "./magic/magic8ball_17.png"
     myImage[18] = "./magic/magic8ball_18.png"
     myImage[19] = "./magic/magic8ball_19.png"
-    myImage[20] = "./magic/magic8ball_20.png"
     var random = Math.floor(Math.random() * myImage.length);
     document.getElementById("answers").innerHTML = "<img src='" 
       + myImage[random] + "' alt='image'></img>";
