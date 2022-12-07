@@ -1,4 +1,8 @@
 function ask() {
+    const inputVal = document.getElementById("myInput").value;
+    if (inputVal.length < 1) {
+        document.getElementById("answers").innerHTML = "<img src=./magic/magic8ball_extra.png alt ='image'>";
+  } else {
     var myImage = new Array();
     myImage[0] = "./magic/magic8ball_1.png"
     myImage[1] = "./magic/magic8ball_2.png"
@@ -22,33 +26,29 @@ function ask() {
     myImage[19] = "./magic/magic8ball_19.png"
     var random = Math.floor(Math.random() * myImage.length);
     document.getElementById("answers").innerHTML = "<img src='" 
-      + myImage[random] + "' alt='image'></img>";
+      + myImage[random] + "' alt='image'>";
   }
+}
 
-  function hideElement() {
+  function hideElements() {
     var x = document.getElementById("ask");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
-
-  function hideElement2() {
-    var x = document.getElementById("directions");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+    x.style.display = "none";
+    var y = document.getElementById("directions");
+    y.style.display = "none";
   }
 
   function getInputValue() {
-    var inputVal = document.getElementById("myInput").value;
+    const inputVal = document.getElementById("myInput").value;
+    console.log(inputVal);
+    if (inputVal.length < 1) {
+        document.getElementById("question").innerHTML = "Ask Question";
+  } else {
     document.getElementById("question").innerHTML = inputVal;
   }
 
-  function showQuestion() {
+}
+
+  function showInputValue() {
     div = document.getElementById("question");
     div.style.display = "block";
   }
