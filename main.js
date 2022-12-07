@@ -52,3 +52,8 @@ function ask() {
     div = document.getElementById("question");
     div.style.display = "block";
   }
+
+  function rotate() {
+    var img = document.getElementById("answers");
+    img.rotate(20*Math.PI/180);
+    }
