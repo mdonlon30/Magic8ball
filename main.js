@@ -25,8 +25,7 @@ function ask() {
     myImage[18] = "./magic/magic8ball_18.png"
     myImage[19] = "./magic/magic8ball_19.png"
     var random = Math.floor(Math.random() * myImage.length);
-    document.getElementById("answers").innerHTML = "<img src='" 
-      + myImage[random] + "' alt='image'>";
+    document.getElementById("answers").innerHTML = "<img src='" + myImage[random] + "' alt='image'>";
   }
 }
 
